@@ -1,0 +1,29 @@
+{
+  "name": "runburn",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Runburn - GitHub Actions Cost Intelligence Dashboard",
+  "workspaces": [
+    "dashboard"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm:dev:api\" \"npm --prefix dashboard run dev\"",
+    "dev:api": "node --watch --env-file=.env server.js",
+    "build": "npm --prefix dashboard run build",
+    "start": "node --env-file=.env server.js",
+    "lint": "npm --prefix dashboard run lint"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.54.0",
+    "@octokit/app": "^15.0.0",
+    "@octokit/rest": "^21.1.1",
+    "@supabase/supabase-js": "^2.49.8",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
