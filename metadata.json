@@ -1,0 +1,11 @@
+{
+  "name": "RunBurn - CI Waste Intelligence",
+  "description": "Stop invisible CI spend and developer productivity leakage with AI-powered GitHub Actions audits, cost leak scanning, and flakiness calculation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "AI-powered CI Optimization",
+    "Cost Visualization",
+    "Flaky Test Benchmarking",
+    "CI Flakiness Calculator"
+  ]
+}
